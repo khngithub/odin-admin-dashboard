@@ -1,0 +1,115 @@
+@import '../globals/variables.css';
+
+.header {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    /* Set z-index to make box shadow visible */
+    position: relative;
+    z-index: 10;
+}
+
+input[type="search"] {
+    width: 40rem;
+    height: 1.75rem;
+    margin: 0 1rem;
+    border-radius: 1.875rem;
+    border: none;
+    background-color: var(--blue-2);
+}
+
+.header-top {
+    grid-row: 1 / 2;
+    
+    display: grid;
+    grid-template-columns: 15fr 3fr;
+}
+
+.header-bottom {
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 12fr 6fr;
+    margin-top: 2rem;
+}
+
+.header-top-search {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-notif {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#search-button {
+    border: none;
+    background-color: transparent;
+}
+
+/* .material-symbols-outlined {
+    font-size: 1.5rem;
+} */
+
+.profile-icon-small {
+    margin: 0 1rem;
+    /* display: flex;
+    align-items: center; */
+}
+
+.profile-name {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header-bottom-welcome {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    
+}
+
+.profile-icon-large {
+    width: 4rem;
+    align-self: center;
+}
+
+.welcome-msg {
+    align-self: center;
+    font-weight: 700;
+}
+
+.welcome-msg-1 {
+    font-size: 1rem;
+}
+
+.welcome-msg-2 {
+    font-size: 2rem;
+    margin-top: .5rem;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.action-buttons > button {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    align-self: center;
+    justify-self: end;
+    background-color: var(--blue-1);
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 1rem;
+}
+

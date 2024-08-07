@@ -1,0 +1,50 @@
+@import '../globals/variables.css';
+
+.project-card {
+    background-color: var(--orange-1);
+    height: 250px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr 50fr;
+    border-radius: 1rem;
+    /* box-shadow: 1px 1px 5px rgb(201, 201, 201); */
+    box-shadow: var(--box-shadow-card)
+}
+
+.project-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.project-card-content, .project-card-icons {
+    background-color: white;
+}
+
+.project-card-content {
+    grid-column: 2 / 3;
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+}
+
+.project-card-text {
+    font-size: .875rem;
+    color: var(--card-text-color-1);
+}
+
+.project-card-icons {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.project-card-icons .material-symbols-outlined {
+    font-size: 1.75rem;
+    margin: 0 .5rem;
+    color: var(--icon-color-1);
+}

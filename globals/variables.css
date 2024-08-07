@@ -1,0 +1,8 @@
+:root {
+    --blue-1: rgb(67, 161, 216);
+    --blue-2: rgb(239, 249, 255);
+    --orange-1: rgb(255, 209, 84);
+    --box-shadow-card: rgba(0, 0, 0, 0.15) 1.95px 1.95px 3px;
+    --card-text-color-1: rgb(116, 116, 116);
+    --icon-color-1: rgb(78, 78, 78);
+}
